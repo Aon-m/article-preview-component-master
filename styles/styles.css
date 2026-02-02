@@ -1,0 +1,60 @@
+:root {
+  /* Neutral colors */
+  --color-neutral-1: hsl(210, 46%, 95%);
+  --color-neutral-2: hsl(212, 23%, 69%);
+  --color-neutral-3: hsl(214, 17%, 51%);
+  --color-neutral-4: hsl(217, 19%, 35%);
+
+  /* Spacing sizes */
+  --size-xs: clamp(0.5rem, calc(0.35rem + 0.4vw), 1rem);
+  --size-sm: clamp(1rem, calc(1.25rem + 0.5vw), 1.75rem);
+  --size-md: clamp(1.5rem, calc(2rem + 0.5vw), 3rem);
+
+  /* Font sizes */
+  --fs-sm: clamp(1rem, calc(0.8rem + 0.7vw), 1.3rem);
+  --fs-md: clamp(1.5rem, calc(1.3rem + 1vw), 2rem);
+
+  /* Font weights */
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.attribution {
+  grid-area: attribution;
+  width: 100%;
+  text-align: center;
+  padding-block-end: var(--size-sm);
+}
+
+.attribution__text {
+  color: var(--color-neutral-4);
+}
+
+.attribution__link {
+  color: var(--color-neutral-3);
+}
+
+.attribution__link:hover {
+  color: var(--color-neutral-2);
+}
+
+@media screen and (min-width: 40rem) {
+  :root {
+    --fs-sm: clamp(1rem, calc(0.8rem + 0.4vw), 1.5rem);
+    --fs-md: clamp(1.5rem, calc(1.5rem + 0.8vw), 2.5rem);
+  }
+}
