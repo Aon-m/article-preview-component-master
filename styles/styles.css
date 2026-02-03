@@ -172,6 +172,12 @@ footer {
   color: var(--color-neutral-3);
 }
 .dialog-share {
+  color: var(--color-neutral-4);
+}
+.dialog-icon-wrapper {
+  background: var(--color-neutral-1);
+}
+.dialog-icon-wrapper:hover .dialog-share {
   color: var(--color-neutral-1);
 }
 .icon-wrapper:hover .share {
