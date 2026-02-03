@@ -26,18 +26,19 @@ Users should be able to:
 ### Screenshot
 
 <div
-  style="display: flex; gap: 1rem; align-items: flex-start; width: clamp(600px, 90%, 1000px); height: 2000px; padding-bottom: 2rem;"
+  style="display: flex; gap: 1rem; align-items: flex-start; 
+  flex-direction: column; width: 100%; height: auto; padding-bottom: 2rem;"
 >
-  <figure style="margin: 0; height: 100%; text-align: center; width: 40%;">
+  <figure style="margin: 0; height: 100%; text-align: center; width: 100%;">
     <figcaption>Mobile preview</figcaption>
     <img
       src="previews/mobile-preview.jpeg"
       alt="Mobile Preview"
-      style="height: 100%; border-right: 1px solid #808080; padding-right: 1em;"
+      style="height: 100%;padding-right: 1em;"
     />
   </figure>
 
-  <div style="display: flex; flex-direction: column; gap: 1rem; width: 50%">
+  <div style="display: flex; flex-direction: column; gap: 1rem; width: 100%; order: -1">
     <figure style="margin: 0; width: 100%; text-align: center;">
       <figcaption>Desktop preview</figcaption>
       <img
